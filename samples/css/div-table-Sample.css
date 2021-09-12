@@ -1,0 +1,23 @@
+div {
+    border: 3px solid #ff0000;
+}
+
+div>h2 {
+    border: 2px solid #a38b03;
+}
+
+div>p {
+    border: 1px solid #538802;
+}
+
+table {
+    border: 3px solid #0000ff
+}
+
+table>th {
+    border: 2px solid #bd0476;
+}
+
+table>td {
+    border: 1px solid #000000;
+}

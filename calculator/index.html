@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 계산기</title>    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <h1 class="titleText">웹 계산기</h1>
+    
+    <hr>
+    
+    <div id="calculatorWrap">
+        <table border="1">
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="display" />
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="result" />
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3">AC</td>
+                <td onclick="inputData('/');">/</td>
+            </tr>
+
+            <tr>
+                <td onclick="inputData(7);">7</td>
+                <td onclick="inputData(8);">8</td>
+                <td onclick="inputData(9);">9</td>
+                <td onclick="inputData('*');">x</td>
+            </tr>
+
+            <tr>
+                <td onclick="inputData(4);">4</td>
+                <td onclick="inputData(5);">5</td>
+                <td onclick="inputData(6);">6</td>
+                <td onclick="inputData('-');">-</td>
+            </tr>
+
+            <tr>
+                <td onclick="inputData(1);">1</td>
+                <td onclick="inputData(2);">2</td>
+                <td onclick="inputData(3);">3</td>
+                <td onclick="inputData('+');">+</td>
+            </tr>
+
+            <tr>
+                <td colspan="2" onclick="inputData(0)">0</td>
+                <td onclick="inputData('.');">.</td>
+                <td onclick="calculate();">=</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

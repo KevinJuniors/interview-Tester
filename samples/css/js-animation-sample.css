@@ -1,0 +1,17 @@
+#jsAni {
+    width: 100px;
+    height: 100px;
+    margin-top: 100px;
+    float: right;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #0000ff;
+    color: #ffffff;
+    text-align: center;
+    font-weight: blod;
+}
+
+.moveBtn {
+    font-weight: 700;
+    font-size: 16px;
+}

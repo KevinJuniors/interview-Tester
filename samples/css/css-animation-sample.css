@@ -1,0 +1,58 @@
+#cssAni {
+    /* aniwrap의 넓이, 높이, 배경색, 문자 정렬 및 굵기 지정 */
+    width: 100px;
+    height: 100px;
+    margin-top: 100px;
+    float: left;
+    border-radius: 50%;
+    background-color: #ff0000;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+
+    /* Position 속성지정 */
+    position: absolute;
+
+    /* 애니메이션 속성설정 */
+    animation-name: moveAni; /* 이름 지정 */
+    animation-delay: 1s; /* 실행지연시간 지정 */
+    animation-duration: 5s; /* 애니메이션 진행시간 */
+    animation-iteration-count: 4; /* 애니메이션 반복횟수 */
+    animation-direction: alternate; /* 진행방향 설정 */
+}
+
+#moveCircle {
+    width: 150px;
+    height: 150px;
+    margin-top: 450px;
+    border-radius: 30%;
+    background: #6db0ca;
+    transition-duration: 0.5s;
+}
+
+#moveCircle:hover {
+    background: #226f8d;
+    transform: rotate(180deg);
+}
+
+@keyframes moveAni {
+    0% {
+        left: 10px;
+        top: 10px;
+    }
+
+    50% {
+        left: 500px;
+        top: 400px;
+    }
+
+    70% {
+        left: 750px;
+        top: 200px;
+    }
+
+    100% {
+        left: 1000px;
+        top: 10px;
+    }
+}
